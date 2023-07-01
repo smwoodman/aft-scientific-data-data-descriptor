@@ -1,8 +1,8 @@
 ---
-title: "Demo aft format to use as template"
+title: "Demo sci-data format to use as template"
 format:
-  aft-pdf:
-    keep-tex: true  
+  sci-data-pdf:
+    sci-data-tex: true  
   aft-html: default
 author:
   - name: John Doe
