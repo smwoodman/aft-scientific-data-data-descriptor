@@ -51,3 +51,10 @@ You can view a preview of the rendered template at <https://quarto-journals.gith
 ## Format Options
 
 This format does not have specific format option. Include documentation of such option otherwise. See <https://github.com/quarto-journals/elsevier#format-options> for an example.
+
+
+
+SMW NOTE: must add jabbr as local. To do this, generally follow [here](https://www.ias.edu/math/computing/faq/local-latex-style-files):
+- In (RStudio) terminal, run `kpsewhich -var-value TEXMFLOCAL` to get local directory. For me, this was 'C:/Users/sam.woodman/AppData/Roaming/TinyTeX/texmf-local'
+- In ^ folder, there is a path tex/latex/local. In here, make 'jabbrv' folder, and add the three files (jabbrv.sty, jabbrv-ltwa-all.ldf, jabbrv-ltwa-en.ldf)
+- In (RStudio) temrinal, run `mktexlsr` to update 'ls-R' file
