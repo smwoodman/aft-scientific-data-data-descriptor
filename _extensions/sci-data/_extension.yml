@@ -27,7 +27,8 @@ contributes:
       # Set this below (`biblio-config: false`) if your cls already load a bst file
       # biblio-config: false
       # Content to add in header that your format is using
-      # header-includes: 
+      header-includes: |
+        \usepackage{orcidlink}
       template-partials:
         # Add here the partials your format is using
         # - "partials/title.tex"
