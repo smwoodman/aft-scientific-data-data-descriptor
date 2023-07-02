@@ -1,30 +1,71 @@
 ---
 title: "Demo sci-data format to use as template"
 format:
-  sci-data-pdf:
-    sci-data-tex: true  
+  sci-data-pdf: default
   sci-data-html: default
 author:
-  - name: John Doe
+  - name: Name1 Surname
+    equal-contributor: true
     affiliations:
-      - name: Dummy org
-        department: Cool Dep
-        address: Somewhere
-        city: Magic city
-        country: best one
-        postal-code: 9999
-      - Demo Journal
-    orcid: 0000-0000-0000-0000
-    email: JD@example.org
-    url: https://example.org/
-  - name: his friend
+      - ref: aff1
+      - ref: aff2
+  - name: Name2 Surname
+    equal-contributor: true
     affiliations:
-      - Another Affiliation
+      - ref: aff2
+  - name: Name3 Surname
+    affiliations:
+      - ref: aff2
+      - ref: aff3
+    notes: |
+      "Current Address: Dept/Program/Center, Institution Name, City, State, Country"
+  - name: Name4 Surname
+    affiliations:
+      - ref: aff2
+  - name: Name5 Surname
+    affiliations:
+      - ref: aff2
+    deceased: true
+  - name: Name6 Surname
+    affiliations:
+      - ref: aff2
+  - name: Name7 Surname
+    affiliations:
+      - ref: aff1
+      - ref: aff2
+      - ref: aff3
+    corresponding: true
+    email: correspondingauthor@institute.edu
+  - name: with the Lorem Ipsum Consortium
+    group: true
+author-notes:
+  equal-contributor: These authors contributed equally to this work.
+  deceased: Deceased
+  group: Membership list can be found in the Acknowledgments sections
+affiliations:
+  - id: aff1
+    name: Affiliation Dept, Institution Name
+    city: City
+    state: State
+    country: Country
+  - id: aff2
+    name: Affiliation Center, Institution Name
+    city: City
+    state: State
+    country: Country
+  - id: aff3
+    name: Affiliation Program, Institution Name
+    city: City
+    state: State
+    country: Country
 abstract: |
-  This document is only a demo explaining how to use the template.
-keywords: [template, demo]
-reference-section-title: References
-bibliography: bibliography.bib  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
+author-summary: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
+bibliography: bibliography.bib 
+editor: 
+  markdown: 
+    wrap: 80
 ---
 
 ## Introduction {#sec-intro}
