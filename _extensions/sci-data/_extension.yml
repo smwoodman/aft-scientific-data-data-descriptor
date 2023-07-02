@@ -23,8 +23,8 @@ contributes:
       # Set this below (`biblio-config: false`) if your cls already load a bst file
       # biblio-config: false
       # Content to add in header that your format is using
-      # header-includes: |
-      #   \usepackage{orcidlink}
+      header-includes: |
+        \usepackage{lineno}
       template-partials:
         - "partials/before-body.tex"
         - "partials/_authors.tex"
